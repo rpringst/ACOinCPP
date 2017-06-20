@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Robert/CLionProjects/ACO/edge.cpp
+edge.h
+C:/Users/Robert/CLionProjects/ACO/edge.h
+
+C:/Users/Robert/CLionProjects/ACO/edge.h
+
+C:/Users/Robert/CLionProjects/ACO/graph.cpp
+graph.h
+C:/Users/Robert/CLionProjects/ACO/graph.h
+
+C:/Users/Robert/CLionProjects/ACO/graph.h
+vertex.h
+C:/Users/Robert/CLionProjects/ACO/vertex.h
+edge.h
+C:/Users/Robert/CLionProjects/ACO/edge.h
+iostream
+-
+
+C:/Users/Robert/CLionProjects/ACO/main.cpp
+graph.h
+C:/Users/Robert/CLionProjects/ACO/graph.h
+
+C:/Users/Robert/CLionProjects/ACO/vertex.cpp
+vertex.h
+C:/Users/Robert/CLionProjects/ACO/vertex.h
+
+C:/Users/Robert/CLionProjects/ACO/vertex.h
+set
+-
+
