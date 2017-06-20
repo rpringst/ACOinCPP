@@ -13,10 +13,10 @@ class Edge;
 
 class Vertex {
 private:
-    std::set<Vertex> _edges;
+    std::set<Edge> _edges;
 public:
-    int id;
-
+    static int _count;
+    int _id;
 };
 
 

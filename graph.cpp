@@ -1,7 +1,7 @@
 #include "graph.h"
 
 bool operator<(const Vertex &lhs, const Vertex &rhs) {
-    return lhs.id < rhs.id;
+    return lhs._id < rhs._id;
 }
 
 Graph::Graph(void)
