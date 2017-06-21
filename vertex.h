@@ -9,14 +9,15 @@ class Edge;
 
 //=================================
 // included dependencies
-#include <set>
+#include <vector>
 
 class Vertex {
 private:
-    std::set<Edge> _edges;
-public:
     static int _count;
+    std::vector<Edge*> _edges;
+public:
     int _id;
+    Vertex(void);
 };
 
 

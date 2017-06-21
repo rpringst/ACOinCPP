@@ -14,13 +14,10 @@
 #include <iostream>
 
 class Graph {
-    std::set<Vertex> _vertices;
+private:
+    std::vector<Vertex*> _vertices;
 public:
     Graph(void);
-    Graph(std::set<Vertex>);
-    std::pair<std::set<Vertex>::iterator, bool> addVertex(Vertex);
-    void connectVertices(Vertex, Vertex, double);
-    std::set<Vertex> getVertices(void);
 };
 
 
