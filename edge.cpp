@@ -1,16 +1,21 @@
 #include "edge.h"
 
+// Static variable initialization
+int Edge::_count = 0;
+
 // Constructors
 Edge::Edge(void)
     : _initial{nullptr},
       _final{nullptr},
-      _weight{-1}
+      _weight{-1},
+      _id{++_count}
 {}
 
 Edge::Edge(Vertex* begin, Vertex* end, double weight)
     : _initial{begin},
       _final{end},
-      _weight{weight}
+      _weight{weight},
+      _id{++_count}
 {}
 
 // Setters

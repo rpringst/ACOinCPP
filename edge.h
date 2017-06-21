@@ -13,10 +13,12 @@ class Vertex;
 
 class Edge {
 private:
+    static int _count;
     Vertex* _initial;
     Vertex* _final;
     double _weight;
 public:
+    int _id;
     Edge(void);
     Edge(Vertex*, Vertex*, double);
     void setInitial(Vertex*);

@@ -18,6 +18,8 @@ private:
 public:
     int _id;
     Vertex(void);
+    Vertex(Vertex*, double);
+    Vertex(std::vector<Vertex*>, std::vector<double>);
 };
 
 
