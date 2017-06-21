@@ -3,6 +3,18 @@
 // Static variable initialization
 int Edge::_count = 0;
 
+// Operator overloading
+namespace std
+{
+    template<> struct less<Edge>
+    {
+        bool operator() (const Edge& lhs, const Edge& rhs) const
+        {
+            return lhs._id < rhs._id;
+        }
+    };
+}
+
 // Constructors
 Edge::Edge(void)
     : _initial{nullptr},

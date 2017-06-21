@@ -9,17 +9,16 @@ class Edge;
 
 //=================================
 // included dependencies
-#include <vector>
+#include <map>
 
 class Vertex {
 private:
     static int _count;
-    std::vector<Edge*> _edges;
+    std::map<int, std::pair<Vertex*, Edge*>> _edges;
 public:
     int _id;
     Vertex(void);
-    Vertex(Vertex*, double);
-    Vertex(std::vector<Vertex*>, std::vector<double>);
+    Vertex(std::pair<Vertex*, Edge*>);
 };
 
 

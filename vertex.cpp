@@ -3,17 +3,25 @@
 // Static variable initialization
 int Vertex::_count = 0;
 
+// Operator overloading
+namespace std
+{
+    template<> struct less<Vertex>
+    {
+        bool operator() (const Vertex& lhs, const Vertex& rhs) const
+        {
+            return lhs._id < rhs._id;
+        }
+    };
+}
+
 // Constructors
 Vertex::Vertex(void)
     : _id{++_count},
-      _edges(std::vector<Edge*>())
+      _edges(std::map<int, std::pair<Vertex*, Edge*>>())
 {}
 
-Vertex::Vertex(Vertex* neighbor, double weight) {
-
-}
-
-Vertex::Vertex(std::vector<Vertex*> neighbors, std::vector<double> weights) {
+Vertex::Vertex(std::pair<Vertex*, Edge*>) {
 
 }
 
