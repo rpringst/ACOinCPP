@@ -5,20 +5,26 @@
 
 //=================================
 // forward declared dependencies
-class Edge;
+// NONE
 
 //=================================
 // included dependencies
 #include <map>
+#include "edge.h"
 
 class Vertex {
 private:
     static int _count;
-    std::map<int, std::pair<Vertex*, Edge*>> _edges;
+    std::map<Vertex*, Edge> _edges;
 public:
     int _id;
     Vertex(void);
-    Vertex(std::pair<Vertex*, Edge*>);
+    Vertex(std::map<Vertex*, Edge>);
+    bool addNeighbor(Vertex*, double);
+    std::map<Vertex*, Edge> getNeighbors(void);
+    bool isNeighbor(Vertex*);
+    double getNeighborWeight(Vertex*);
+    bool operator<(const Vertex& b) const;
 };
 
 

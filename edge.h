@@ -27,6 +27,7 @@ public:
     Vertex* getInitial(void);
     Vertex* getFinal(void);
     double getWeight(void);
+    bool operator<(const Edge& b) const;
 };
 
 

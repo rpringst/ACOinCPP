@@ -2,7 +2,7 @@
 
 // Constructors
 Graph::Graph(void)
-    : _vertices{std::vector<Vertex*>()}
+    : _vertices{std::map<int, Vertex*>()}
 {}
 
 // Setters

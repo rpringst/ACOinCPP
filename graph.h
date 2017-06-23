@@ -15,7 +15,7 @@
 
 class Graph {
 private:
-    std::vector<Vertex*> _vertices;
+    std::map<int, Vertex*> _vertices;
 public:
     Graph(void);
 };

@@ -14,6 +14,7 @@ CMakeFiles/ACO.dir/main.cpp.obj: ../graph.h
 CMakeFiles/ACO.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/ACO.dir/main.cpp.obj: ../vertex.h
 
+CMakeFiles/ACO.dir/vertex.cpp.obj: ../edge.h
 CMakeFiles/ACO.dir/vertex.cpp.obj: ../vertex.cpp
 CMakeFiles/ACO.dir/vertex.cpp.obj: ../vertex.h
 

@@ -4,15 +4,8 @@
 int Edge::_count = 0;
 
 // Operator overloading
-namespace std
-{
-    template<> struct less<Edge>
-    {
-        bool operator() (const Edge& lhs, const Edge& rhs) const
-        {
-            return lhs._id < rhs._id;
-        }
-    };
+bool Edge::operator<(const Edge& b) const {
+    return this->_id < b._id;
 }
 
 // Constructors
